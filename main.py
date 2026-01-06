@@ -7,9 +7,10 @@ def compute_average(event):
     average = (score1 + score2) / 2
 
     if average >= 75:
-        result = "👍"
+        result = "Yes"
     else:
-        result = "👎"
+        result = "No"
 
     document.getElementById("average").innerText = str(round(average, 2))
+
     document.getElementById("result").innerText = result
